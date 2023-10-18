@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+li:hover{
+    /* background-color: rgba(39, 47, 155, 0.466); */
+    border-radius: 10px 10px 10px 0px;
+    color: rgb(253, 253, 253);
+    transform: scale3d(1.2,1.2,1.2);
+    /* border: 2px solid black; */
+}
+.navbar{
+    font-family: 'Poppins', sans-serif;
+}
+.nav-item a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    display: flex;
+    gap: 70px;
+}

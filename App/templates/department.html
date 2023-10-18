@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Department
+{% endblock %}
+
+{% block content %}
+    <h1 class="text-center">Our Departments</h1><hr>
+    {% for d in dept %}
+    <div class="container w-75 ">
+        <div class="bg-body-secondary text-center m-5 border border-4 border-primary rounded-3 p-3">
+            <h2 class="text-dark">{{d.dep_name}}</h2>
+            <h3 class="text-secondary ">{{d.dep_description}}</h3>
+        </div>
+    </div>
+    {% endfor %}
+        
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card m-4 border border-5 border-secondary-subtle rounded-4 text-center h-100">
+                    <div class="card-body">
+                        <h2>Urology</h2>
+                        <p>Evaluates and treats urinary tract conditions</p>
+                        <button class="border border-4 border-secondary rounded-3">Book Appoinment</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card m-4 border border-5 border-secondary-subtle rounded-4 text-center h-100">
+                    <div class="card-body">
+                        <h2>Dermatology</h2>
+                        <p>Speciality with both medical and surgical aspects</p>
+                        <button class="border border-4 border-secondary rounded-3">Book Appoinment</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card m-4 border border-5 border-secondary-subtle rounded-4 text-center h-100">
+                    <div class="card-body">
+                        <h2>Cardiology</h2>
+                        <p>Speacialised treatment for patients with heart disease</p>
+                        <button class="border border-4 border-secondary rounded-3">Book Appoinment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+{% endblock %}
