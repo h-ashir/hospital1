@@ -2,8 +2,8 @@
 li:hover{
     /* background-color: rgba(39, 47, 155, 0.466); */
     border-radius: 10px 10px 10px 0px;
-    color: rgb(253, 253, 253);
-    transform: scale3d(1.2,1.2,1.2);
+    /* color: rgb(253, 253, 253); */
+    transform: scale3d(1.25,1.25,1.25);
     /* border: 2px solid black; */
 }
 .navbar{
@@ -14,4 +14,40 @@ li:hover{
     font-weight: 300;
     display: flex;
     gap: 70px;
+}
+
+/* .formdiv{
+    background-color: rgba(160, 168, 168, 0.466);
+} */
+.form-group{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color:rgb(72, 77, 78);
+    margin-bottom: 15px;
+}
+.form-group label{
+    flex: 1;
+    text-align: right;
+    padding-right: 15px;
+}
+.form-group input, .form-group select {
+    flex: 2;
+    width: 100%;
+    border: 3px solid rgba(25, 41, 46, 0.363);
+    border-radius: 8px;
+    margin-right: 50px;
+    height: 40px;
+}
+.btn{
+    width: 60%;
+    background-color: rgb(0, 140, 255);
+    border-radius: 11px;
+    /* opacity: 0.7; */
+}
+.btn:hover{
+    background-color: rgb(255, 17, 0);
+    transform: scale3d(1.1,1.1,1.1);
+    opacity: 0.8;
 }

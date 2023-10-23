@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 
-<!-- {% load crispy_forms_tags %} -->
 {% load static %}
 
 {% block title %}
@@ -9,15 +8,36 @@ Booking
 
 {% block content %}
     <h1 class="text-center">Make an Appoinment</h1><hr>
-    <div class="container w-50 text-center bg-dark-subtle rounded-4 mt-4 mb-4 border border-2 border-primary">
+    <div class="container w-50 text-center bg- rounded-4 mt-4 mb-4 border border-4 border-primary">
         <br><br> 
-        <form class="bookingform" action="" method="POST">
+        <form action="" class="formdiv" method="POST">
             {% csrf_token %}
-            {{form.as_p}}
+            <!-- {{form.as_p}} -->
+            <div class="form-group">
+                <label for="{{ form.p_name.id_for_label }}" class="patient-name-class">Patient Name: </label>
+                {{ form.p_name }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.p_phone.id_for_label }}" class="patient-phone-class">Phone Number: </label>
+                {{ form.p_phone }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.p_email.id_for_label }}" class="patient-email-class">Email Address: </label>
+                {{ form.p_email }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.doc_name.id_for_label }}" class="doc-name-class">Doctor: </label>
+                {{ form.doc_name }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.booking_date.id_for_label }}" class="booking-date-class">Booking Date: </label>
+                {{ form.booking_date }}
+            </div>
             <br>
             <button class="btn btn-primary m-4" onclick="confirmation.html">Submit</button>
         </form>
     </div>
 {% endblock %}
+
 
 <!-- <link rel="stylesheet" href="{% static 'App/css/bookingstyle.css' %}"> -->
